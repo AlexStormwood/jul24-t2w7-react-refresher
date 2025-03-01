@@ -22,7 +22,9 @@ function App() {
       method: "POST",
       body: JSON.stringify(bodyToSend),
       headers: {
-        "Content-Type":"application/json"
+        "Content-Type":"application/json",
+        // "Authorization":"Bearer " + someToken
+        // "jwtCustomheader":someToken
       }
     });
 
